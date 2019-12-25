@@ -81,7 +81,7 @@ export class ItemsService {
     {
       id: 13,
       title: 'wwwwwwwwww 13',
-      description: '',
+      description: 'la la la ',
       img: '../../assets/images/download.jpeg'
     },
   ];
