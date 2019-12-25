@@ -1,7 +1,10 @@
 .item-list-wrapper {
   margin-top: 50px;
-
+  @media (max-width: 576px) {
+    margin-top: 75px;
+  }
   .responce-card {
+    padding: 15px;
     @media (max-width: 576px) {
       width: 100%;
     }
@@ -10,7 +13,6 @@
     }
     @media (min-width: 968px) {
       width: 33.333%;
-      padding: 15px;
       transition: all .3s linear;
       cursor: pointer;
       &:hover {
