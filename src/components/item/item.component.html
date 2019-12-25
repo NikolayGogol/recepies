@@ -1,0 +1,12 @@
+<mat-card class="card-wrapper" *ngIf="itemData">
+  <img mat-card-image *ngIf="itemData.img" [src]="itemData.img" alt="Photo of a Shiba Inu">
+  <img mat-card-image *ngIf="!itemData.img" src="../../assets/images/no_img.png" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <h2 *ngIf="itemData.title">{{ itemData.title }}</h2>
+    <p class="card-description" *ngIf="itemData.description">{{ itemData.description }}</p>
+    <p *ngIf="!itemData.description">no description</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" [routerLink]="[itemData.id]" mat-button>Read More</button>
+  </mat-card-actions>
+</mat-card>

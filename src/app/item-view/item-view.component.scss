@@ -1,0 +1,16 @@
+.single-item-wrapper {
+  margin-top: 75px;
+  @media (max-width: 576px) {
+    margin-top: 0;
+  }
+}
+
+.btn-back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  @media (max-width: 576px) {
+    position: fixed;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="item-list-wrapper">
+  <div class="container">
+    <mat-paginator [length]="itemsLenght"
+                   [pageSize]="2"
+                   (click)="pagination()"
+                   (page)="pageEvent = $event"
+                   [pageSizeOptions]="[2, 4, 6,itemsLenght]">
+    </mat-paginator>
+    <div class="d-flex flex-wrap row">
+      <app-item class="responce-card" *ngFor="let item of items" [itemData]="item"></app-item>
+    </div>
+  </div>
+</div>

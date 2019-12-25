@@ -1,0 +1,21 @@
+.item-list-wrapper {
+  margin-top: 50px;
+
+  .responce-card {
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+    @media (min-width: 577px) {
+      width: 50%;
+    }
+    @media (min-width: 968px) {
+      width: 33.333%;
+      padding: 15px;
+      transition: all .3s linear;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
