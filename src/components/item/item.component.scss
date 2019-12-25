@@ -1,6 +1,10 @@
 .card-wrapper {
   width: 100%;
 
+  .description {
+    word-break: break-all;
+  }
+
   .card-description {
     white-space: nowrap;
     width: 100%;

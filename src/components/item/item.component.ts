@@ -8,6 +8,7 @@ import {Item} from '../../interfaces/item';
 })
 export class ItemComponent implements OnInit {
   @Input() itemData: Item;
+  @Input() isDescription: boolean;
   @Output() item = new EventEmitter();
 
   constructor() {
